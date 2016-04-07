@@ -106,8 +106,8 @@ prev_w2 = 0
 k = 0.1
 
 for step_i in np.arange(0,10000):
-    w1 = calc_w1(prev_w1, prev_w2, k, X, Y, 0)
-    w2 = calc_w2(prev_w1, prev_w2, k, X, Y, 0)
+    w1 = calc_w1(prev_w1, prev_w2, k, X, Y, 5)
+    w2 = calc_w2(prev_w1, prev_w2, k, X, Y, 5)
 
 
     e = math.sqrt(math.pow((w2 - prev_w2), 2) + math.pow((w1 - prev_w1), 2))
